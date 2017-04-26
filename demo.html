@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>DEMO-RegularPolygonGenerator</title>
+	<script type="text/javascript" src="RegularPolygonGenerator.js"></script>
+	<script>
+		function place(){
+			var n=document.getElementById("n").value;
+			RegularPolygon("demo",n,320,320,320);
+		}
+	</script>
+</head>
+<body>
+	<header>
+		Please input a number that great than (2):
+		<input id="n" type="number" placeholder="number" />
+		<button onclick="place()">Generate</button>
+	</header>
+	
+	<canvas id="demo" width="640" height="640">
+		WARNING:This is HTML5 Page.If you see this message,it means your browser doesn't support HTML5 page.
+	</canvas>
+</body>
